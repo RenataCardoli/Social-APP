@@ -24,24 +24,27 @@ I'm Security Engineer and Python Student, but I'm also a mother of two dogs, a g
 
 ## Installation
 Create a new folder in your desktop 
+
+$BASH
 ```bash
 cd desktop
 mkdir new_folder
 cd new_folder
 code .
 ```
+$BASH
 
 ```bash
-  git clone https://github.com/RenataCardoli/Social-APP.git
-  cd social-APP
-  python -m virtualenv venv
-  (windows) venv\Scripts\activate
-  (mac) . ./venv/bin/activate 
-  pip install -r requirements.txt
-  python manage.py migrate  
-  python manage.py runserver 
-  python manage.py createsuperuser
-   
+git clone https://github.com/RenataCardoli/Social-APP.git
+cd social-APP
+python -m virtualenv venv
+(windows) venv\Scripts\activate
+(mac) . ./venv/bin/activate 
+pip install -r requirements.txt
+python manage.py migrate  
+python manage.py runserver 
+python manage.py createsuperuser
+
 ```
 ## Comentarios
 - Esta es una entrega de proyecto Final para el curso de Python en Coderhouse
