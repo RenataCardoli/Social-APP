@@ -55,6 +55,11 @@ python manage.py createsuperuser
 
 - [@renataCardoli](https://github.com/RenataCardoli/)
 
+##OPCIONES DE MEJORAS EN LA APP
+
+- una vez logeado al cambiar la URL para 'http://127.0.0.1:8000/login/' la pagina presenta el formulario de login. - corregir - 
+- implementar reset contraseña, hubo por error en el smtp.django ( Gmail no acepta less secure apps to access gmail accounts )
+- Incluir Like y Nombre de usuario en los comentarios. 
 
 ## 🛠 Skills
 HTML, CSS, Javascript, Bootstrap, SCSS, AJAX and also Python and Django. 
