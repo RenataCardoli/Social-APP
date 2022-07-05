@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Hero Section -->
+<header class="row">
+  <div class="col-md-3">
+    <img class="img-thumbnail"src="{% static 'portfolio/profile.jpg' %}" />
+  </div>
+
+  <div class="col-md-8 my-auto py-4">
+    <h1 class="text-secondary">Hey, how are you doing?</h1>
+    <h2 class="text-secondary">Before you visit my new project with Python + Django + Bootstrap let me introduce myself. </h2>
+      <h2 class="text-success">I'm <strong>Renata Cardoso. 😀</strong></h2> 
+      <p class="text-success">I'm Security Engineer and Python Student, but I'm also a mother of two dogs, a gamer and a technology lover. Below you can see links of other projects, where I applied knowledge of HTML, CSS, Javascript, Bootstrap, SCSS, AJAX and also the link of this project in Python + Django. 
+      </p>
+      <a class="btn btn-success btn-md" href="{% url 'users-login' %}"> Project Python + Django: <strong>Tattle App😀</strong></a>
+    <a class="btn btn-outline-info btn-sm " href="https://www.linkedin.com/in/renatalimacardoso/">Linkedin</a>
+    <a class="btn btn-outline-warning btn-sm " href="{% static 'portfolio/resume.pdf' %}">Download my CV</a>
+    <a class="btn btn-outline-info btn-sm my-2 " href="https://github.com/RenataCardoli?tab=repositories">Github</a>
+   
+    
+  </div>
+
+</header>
+
+<!-- Porfolio Section -->
+<div class="row my-4 text-center">
+
+  <h3>My Projects</h3>
+
+  {% for project in projects %}
+  <div class="col-md-4 p-4">
+    <div class="card bg-black card-project">
+      <img src="{{project.image.url }}" class="card-img-top" />
+
+      <div class="card-body">
+
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+
+        {% if project.url %}
+        <a href="{{project.url}}" class="btn btn-primary btn-sm" target="__blank" rel="noreferrer">Github</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+{% endblock %}

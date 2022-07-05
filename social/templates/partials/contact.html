@@ -1,0 +1,26 @@
+{% load crispy_forms_tags %}
+<!--========================================================== -->
+<!-- CONTENEDOR DEL FORMULARIO CONTACTO -->
+<!--========================================================== -->
+<div class="container border-top border-primary" style="max-width: 500px">
+  <div class="text-center mb-4" id="titulo-formulario">
+    <div><img src="./img/support.png" alt="" class="img-fluid ps-5" /></div>
+    <h2>Contact</h2>
+    <p class="fs-5">Do you have suggestions or complaints? Can we improve something? Please send your contact through our contact form:</p>
+  </div>
+  <div class="container">
+  <form method="POST">
+    {% csrf_token %} {{ form|crispy }}
+    <input
+    class="btn btn-outline-secondary"
+    type="reset"
+    value="Cancel"
+  />
+    <input
+      class="btn btn-outline-success"
+      type="submit"
+      value="Send"
+    />
+  </form>
+</div>
+</div>

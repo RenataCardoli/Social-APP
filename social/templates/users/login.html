@@ -1,0 +1,35 @@
+{% extends 'partials/base.html' %} 
+{% block title %}Login Page{% endblock %} 
+{%load crispy_forms_tags %} 
+{% block content %}
+<div class="cover">
+<div class="container">
+  <div class="row mt-5 pt-3">
+    <div class="col-md-5 offset-md-3">
+      <div class="card my-3">
+        <div class="card-body">
+          <h4>Tattle Login</h4>
+          <hr/>
+          <form method="POST">
+            {% csrf_token %} 
+            {{ form|crispy }}
+            <input
+              class="btn btn-outline-info btn-block"
+              type="submit"
+              value="Login"
+            />
+          </form>
+            <hr>
+              
+              New here? Create an account on <strong>Tattle</strong> to share your ideas with others!😀  
+              <div class="text-center my-3">
+                <a class="btn btn-outline-success" href="{% url 'users-sign-up'%}">Create an Account</a>
+                </div>    
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'partials/footer.html' %}
+</div>
+{% endblock %}

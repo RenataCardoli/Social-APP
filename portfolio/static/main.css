@@ -1,0 +1,16 @@
+body {
+    background: #ffffff;
+  }
+  
+  .card-project:hover {
+    border: 1px solid #eee;
+    cursor: pointer;
+  }
+
+  .cover{
+    background:url('/media/background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+  }

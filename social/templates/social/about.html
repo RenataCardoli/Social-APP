@@ -1,0 +1,78 @@
+{% extends 'partials/base.html' %}
+{% block title %} Home Page {% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container">
+<!--========================================================== -->
+                    <!-- INTRODUCCION DE SERVICIOS-->
+<!--========================================================== -->
+
+
+<section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+<h1 class="p-3 fs-2 border-top border-3">Tattle es un microblog para compartir informacion y <span class="text-primary"> expandir ideas!<span/></h1>
+ <p class="p-3  fs-4">
+     <span class="text-primary">Tattle Inc.</span> una aplicacion de internet.
+ </p>   
+</section>
+<hr>
+
+<!--========================================================== -->
+                    <!-- TIPOS DE SERVICIOS-->
+<!--========================================================== -->
+
+
+<section class="w-100">
+    <div class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto">
+    <h1 class="text-success"> How to use Tattle ? </h1>
+    </div>
+
+<div class="row w-75 mx-auto" id="how-to-createaccount"> 
+    <div class="mt-5 text-center">
+        <h4 class="text-info"> Create an account </h4>
+        <p>In a first step, you must have an account created in order to log in.</p>
+        <img class="img-thumbnail" src="/media/account-new.jpg" alt="account">
+    </div>
+</div>
+<hr>
+<div class="row w-75 mx-auto" id="how-to-createaccount"> 
+    <div class="mt-5 text-center">
+        <h4 class="text-info"> Create a post </h4>
+        <p>Once logged into the application you can publish your ideas, make comments and share with other users! feel free.</p>
+        <img class="img-thumbnail" src="/media/createapost.jpg.png" alt="post">
+    </div>
+</div>
+<hr>
+<div class="row w-75 mx-auto" id="how-to-createaccount"> 
+    <div class="mt-5 text-center">
+        <h4 class="text-info"> Edit account and posts </h4>
+        <p>Want to change your picture? Your user? or your photo? Yes you can! moreover, you can edit your posts.</p>
+        <img class="img-thumbnail" src="/media/edit.jpg.png" alt="edit">
+    </div>
+</div>
+
+<div class="row w-75 mx-auto" id="how-to-createaccount"> 
+    <div class="mt-5 text-center">
+        <h4 class="text-info"> Delete post </h4>
+        <p>Want to delete a post? Ok! You can also delete it and forget you ever said it.</p>
+        <img class="img-thumbnail" src="/media/detelepost.jpg.png" alt="delete">
+    </div>
+</div>
+<div class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto">
+    <h1>Too easy, isn't it? </h1> 
+    </div>
+</div>
+</section>
+
+<!--========================================================== -->
+                    <!-- SECCION ACERCA DE NOSOTROS-->
+<!--========================================================== -->
+{% include 'partials/contact.html'%}
+<section class="py-3">
+<div class="container w-50 m-auto text-center" id="creator">
+    <h5 class="mb-5 fs-">Create By <span class="text-primary">Renata Cardoso</span></h5>
+</div>
+</section>
+</div>
+{% include 'partials/footer.html' %}
+{% endblock %}
