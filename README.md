@@ -23,7 +23,7 @@ I'm Security Engineer and Python Student, but I'm also a mother of two dogs, a g
 [Bootstrap] (https://getbootstrap.com/)
 
 ## Installation
-Create a new folder in or desktop 
+Create a new folder in your desktop 
 ```bash
 cd desktop
 mkdir new_folder
