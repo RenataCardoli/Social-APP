@@ -49,6 +49,7 @@ python manage.py createsuperuser
 ## Comentarios
 - Esta es una entrega de proyecto Final para el curso de Python en Coderhouse
 - En esta APP inclui tambien un /aboutme para que puedas ver mis otros proyectos
+- en /about this site puedes ver el formulario de contacto y tambien explicacion de como crear cuenta, publicacion y etc...
 
 ## Authors
 
