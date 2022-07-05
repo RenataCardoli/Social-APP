@@ -62,4 +62,4 @@ python manage.py createsuperuser
 - implementar: Like y Nombre de usuario en los comentarios. 
 
 ## 🛠 Skills
-HTML, CSS, Javascript, Bootstrap, SCSS, AJAX and also Python and Django. 
+HTML, CSS, Javascript, Bootstrap,  Python and Django. 
