@@ -4,6 +4,14 @@ Tattle es un microblog para compartir informacion y expandir ideas! como Twitter
 
 * Frontend fue desarrollado con bootstrap y el backend con Django + Python. 
 
+## Que puedes hacer en esta App?
+- Crear una cuenta
+- Crear una publicacion
+- Comentar una publicacion de otro usuario
+- Remover publicacion 
+- Editar profile
+- Editar publicacion
+- Cambiar contraseña
 
 ## 🚀 About Me
 I'm Renata Cardoso. 😀
