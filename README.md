@@ -27,14 +27,6 @@ Create a new folder in your desktop
 
 $BASH
 ```bash
-cd desktop
-mkdir new_folder
-cd new_folder
-code .
-```
-$BASH
-
-```bash
 git clone https://github.com/RenataCardoli/Social-APP.git
 cd social-APP
 python -m virtualenv venv
